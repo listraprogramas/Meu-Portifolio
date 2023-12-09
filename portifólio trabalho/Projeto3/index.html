@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de estoque</title>
+    <link rel="stylesheet" href="style.css"> <!-- importa o arquivo de css -->
+</head>
+<body>
+    <center><h1>Controle de estoque</h1></center> 
+    <h2>Meu estoque de venda</h2>
+
+    <!-- tabela para exibir produtos, quantidade e botao de remover -->
+    <table border="1">
+        <tr>
+            <th>produtos</th>
+            <th>quantidade no estoque</th>
+            <th>ações</th> 
+        </tr>
+        <!-- linhas representando produtos com um botao de remover em cada um deles -->
+        <tr>
+            <td>controle</td>
+            <td>20</td>
+            <td><button onclick="removerProduto(this)">remover</button></td>
+        </tr>
+        <tr>
+            <td>cabo usb</td>
+            <td>60</td>
+            <td><button onclick="removerProduto(this)">remover</button></td>
+        </tr>
+        <tr>
+            <td>fone de ouvido audio mono</td>
+            <td>10</td>
+            <td><button onclick="removerProduto(this)">remover</button></td>
+        </tr>
+        <tr>
+            <td>fone de ouvido audio 8D</td>
+            <td>90</td>
+            <td><button onclick="removerProduto(this)">Remover</button></td>
+        </tr>
+    </table>
+
+    <!-- adiçao de novo produto -->
+    <h3>adicionar novo produto</h3>
+    <label for="nomeProduto">nome do novo produto:</label>
+    <input type="text" id="nomeProduto" placeholder="Nome do novo produto">
+    <label for="quantidadeProduto">quantidade:</label>
+    <input type="text" id="quantidadeProduto" placeholder="Quantidade">
+    <button onclick="adicionarProduto()">colocar</button>
+
+    <!-- atualizaçao de quantidade do produto -->
+    <h3>Atualizar quantidade do produto</h3>
+    <label for="nomeProdutoAtualizar">nome do produto:</label>
+    <input type="text" id="nomeProdutoAtualizar" placeholder="Nome do produto">
+    <label for="quantidadeAtualizar">nova quantidade:</label>
+    <input type="text" id="quantidadeAtualizar" placeholder="Quantidade">
+    <button onclick="atualizarQuantidade()">atualizar</button>
+
+    <!-- informaçoes sobre produtos -->
+    <h3 id="produtosDiferentes">produtos diferentes: 4</h3>
+    <h3 id="quantidadeTotal">quantidade de produtos no estoque: 180</h3>
+    <br>
+    <br>
+    <footer>créditos de pesquisas: Open AI-ChatGPT ; W3schols</footer>
+
+    <script src="main.js"></script> 
+</body>
+</html>
+

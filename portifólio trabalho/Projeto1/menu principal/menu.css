@@ -1,0 +1,76 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  border: 5px solid #007bff;
+}
+
+.menu {
+  text-align: center;
+  padding: 30px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando sombra ao menu */
+}
+
+h1 {
+  color: #343a40;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  margin: 10px;
+  padding: 15px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Adicionando transição à sombra */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionando sombra aos itens do menu */
+}
+
+li:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentando sombra ao passar o mouse */
+}
+
+p {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  display: block; /* Permitindo que os links ocupem toda a área do item do menu */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Adicionando responsividade */
+@media only screen and (max-width: 600px) {
+  .menu {
+      padding: 15px;
+  }
+
+  li {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  li p {
+      font-size: 14px;
+  }
+}
+

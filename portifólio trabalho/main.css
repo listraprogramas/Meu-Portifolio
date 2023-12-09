@@ -1,0 +1,104 @@
+body,
+h1,
+h2,
+h3,
+p,
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#bio h2, #portfolio h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+#portfolio h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+#bio p, #portfolio p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.project p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover {
+    transform: scale(1.1);
+}
+
